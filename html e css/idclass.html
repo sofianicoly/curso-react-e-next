@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 atributos de id e class </title>
+    <style>
+        h1{
+            background: red;
+        }
+        p {
+            background-color: blueviolet;
+        }
+        #heading-dois {
+            background-color: brown;
+        }
+        .fundo-vermelho {
+            background-color: red; /*não mudou pq o ID é mais forte do queo CLASS e para que mudasse o seria necessário outro ID que forçaria essa mudança, ou então colocar "!important" para dar prioridade mas não é recomendado*/
+        }
+    </style>
+    <!--quando quiser especificar uma ID usar # antes e quando for uma classe colocar um . antes-->
+</head>
+<body>
+    <h1 id="heading-um" class="fundo-vermelho"><!--esse id tem que ser único na pág e seria errado criar outros iguais a ele, eles devem ser diferentes-->
+        oi oi
+    </h1>
+    <h1 id="heading-dois" class="fundo-vermelho borda-esquerda"><!--já o class eu posso copiar várias vezes-->
+        oi oi
+    </h1>
+    <p>sei la</p>
+</body>
+</html>
