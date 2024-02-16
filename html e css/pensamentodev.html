@@ -10,6 +10,11 @@
         margin: 0;
         padding: 0;
     }
+    #heading {
+        background-color: #e50914;
+        justify-content: space-between;
+        background: rgba(0, 0, 0, 0.7);
+    }
     /*#heading h1 {
         background-color: #e50914;
         font-size: 35px;
@@ -19,7 +24,6 @@
     }
     OU ENTAO*/
     #heading .h1 {
-        background-color: #e50914;
         font-size: 35px;
         padding: 20px;
         text-transform: uppercase; /*tranformar o texto em maiusculo*/
@@ -31,27 +35,35 @@
         text-decoration: none; /*tira o traco debaixo do link*/
     }
 
-    #heading {
+    #heading div {
         display: flex;
-        background-color: #e50914;
         justify-content: space-between;
     }
 
     #heading .h2 {
-        background-color: #e50914;
         font-size: 15px;
         text-transform: uppercase;
         margin: 30px 20px ;
     }
+
+    body {
+        background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c0b69670-89a3-48ca-877f-45ba7a60c16f/0d265d63-6204-4c1c-93cf-b37412a53423/BR-pt-20240212-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+
+        background-size: cover ;/*para cobrir a tela*/
+        background-position: top-center;
+    }
+
     </style>
 </head>
 <body>
     <header id="heading">
+        <div>
         <h1 class="h1">
             <a href="#">Netflix</a></h1>
 
         <h2 class="h2">
-            <a href="#">Entrar</a></h2>
-    </header>
+            <a href="#">Log In</a></h2>
+    </div>
+</header>
 </body>
 </html>
