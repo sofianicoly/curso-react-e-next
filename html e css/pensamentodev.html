@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pensando em HTML e CSS</title>
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*#heading h1 {
+        background-color: #e50914;
+        font-size: 35px;
+        padding-top: 20px; padding e um enchimento
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    OU ENTAO*/
+    #heading .h1 {
+        background-color: #e50914;
+        font-size: 35px;
+        padding: 20px;
+        text-transform: uppercase; /*tranformar o texto em maiusculo*/
+    }
+ /*quanto mais elementos especificando a mudanca pior sera para fazer modificacoes futuras*/
+    #heading a {
+        color: white;
+        font-family: sans-serif;
+        text-decoration: none; /*tira o traco debaixo do link*/
+    }
+
+    #heading {
+        display: flex;
+        background-color: #e50914;
+        justify-content: space-between;
+    }
+
+    #heading .h2 {
+        background-color: #e50914;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin: 30px 20px ;
+    }
+    </style>
 </head>
 <body>
-    
+    <header id="heading">
+        <h1 class="h1">
+            <a href="#">Netflix</a></h1>
+
+        <h2 class="h2">
+            <a href="#">Entrar</a></h2>
+    </header>
 </body>
 </html>
