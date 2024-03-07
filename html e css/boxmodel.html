@@ -5,22 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model CSS</title>
     <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /*se eu quiser eu posso criar uma parte compartilhada contendo as duas classes juntas, o que eu colocar vai ADD nela e nao vai afetar o que ja coloquei em cada uma separada*/
+        .section-one.section-one{
+            box-sizing: border-box; /*para que TUDO dentro do elemento esteja DENTRO do tamanho colocado, no caso 200x50*/
+        }
         .section-one {
-            width: 200px;
-            height: auto;
             background: deeppink;
-            border: 2px solid black; /*com a borda em 2px ele aumenta 4px ao todo no tamanho porem tem jeito de de deixar o valor de tudo fixo*/
+            width: 200px;
+            height: 50px;
+            border: 4px solid black; 
+            border-bottom-width: 10px;
+            border-bottom-color: palegreen;
+            border-style: solid;
             padding: 15px;
+            margin: 30px;
         }
         .section-two {
             background: deepskyblue;
+            width: 200px;
+            height: 50px;
+            border: 4px solid black; 
+            padding: 15px;
+            margin: 30px;
         }
     </style>
 
 </head>
 <body>
-    <section class="section-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tenetur blanditiis? In sapiente, cumque, fuga voluptatum, officiis vitae distinctio voluptate accusantium voluptatibus laudantium impedit repudiandae dolorum ullam laborum aliquam animi
-        
+    <section class="section-one">Lorem ipsum dolor sit.
     </section>
     <section class="section-two">2</section>
 
